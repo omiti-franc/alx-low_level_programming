@@ -1,9 +1,13 @@
 #include "main.h"
 
 /**
- * main - print putchar
- * return: 0
+ * main - prints putchar
+ *
+ * Description: prints Putchar
+ *
+ * Return: 0 (Success)
  */
+
 int main(void)
 {
 	char *_putchar = 'Putchar';
