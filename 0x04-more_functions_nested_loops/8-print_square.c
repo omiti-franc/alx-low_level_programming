@@ -1,30 +1,29 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- *print_square - prints squares
- *@size: parameter
- *Return: returns nothing
+ * print_array - prints n elements of an array
+ * @a: array of integers
+ * @n: number of items to print
+ * Return: void
  */
 
-void print_square(int size)
+void print_array(int *a, int n)
 {
-	int inc1, inc2;
+	int i, count;
 
-	if (size > 0)
+	i = 0;
+	count = 1;
+	if (n < 0)
+		n = 0;
+	if (n > 0)
 	{
-		for (inc1 = 0; inc1 < size; inc1++)
+		while (a[i] != '\0' && count < n)
 		{
-			for (inc2 = 0; inc2 < (size - 1); inc2++)
-			{
-				putchar('#');
-			}
-
-			putchar('#');
-			putchar('\n');
+			printf("%d, ", a[i]);
+			i++;
+			count++;
 		}
-	}
-	else
-	{
-		putchar('\n');
+		printf("%d\n", a[i]);
 	}
 }
