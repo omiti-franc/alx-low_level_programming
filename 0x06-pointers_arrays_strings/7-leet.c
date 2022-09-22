@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * leet - function that encodes a string into 1337
- * @s: string array
- * Return: string array
+ * leet - Entry point
+ * ONE if, TWO loops only
+ * @n: input
+ * Return: Always 0 (Success)
  */
-
-char *leet(char *s)
+char *leet(char *n)
 {
 	int i, x;
 	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
