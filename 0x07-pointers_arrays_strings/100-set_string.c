@@ -2,7 +2,7 @@
 
 /**
 * _string - sets the value of a pointer to a cha
-*
+*@to: Character
 *@s: String
 *
 * Return: void
