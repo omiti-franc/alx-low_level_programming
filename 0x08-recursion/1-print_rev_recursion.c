@@ -5,7 +5,7 @@
 *
 * @s: String
 *
-* Return: void
+* Return: pointer
 */
 void _print_rev_recursion(char *s)
 {
