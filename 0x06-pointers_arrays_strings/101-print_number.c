@@ -10,9 +10,12 @@
 void print_number(int n)
 {
 	int i;
-	
-	for(i=0; i<=n; i++)
 
-	_putchar('i');
+	for (i = 0; i <= n; i++)
+	{
+	_putchar ('i');
+	}
+	_putchar ('\n')
+
 	return (n);
 }
