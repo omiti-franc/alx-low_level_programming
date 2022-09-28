@@ -9,13 +9,14 @@
 */
 void print_number(int n)
 {
-	int i;
-
-	for (i = 0; i <= n; i++)
+	if (n < 0)
 	{
-	_putchar ('i');
+		_putchar('-');
+		n *= -1;
 	}
-	_putchar ('\n')
 
-	return (n);
+	if (n / 10)
+		print_number(n / 10);
+
+	_putchar((n / 10) + '0');
 }
