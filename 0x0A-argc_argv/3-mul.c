@@ -7,25 +7,24 @@
 * @argc: Arg count
 * @argv: Arg vector
 *
-* Return: Always 0
+* Return: 0, if error return 1
 */
 int main(int argc, char *argv[])
 {
-	int n1;
-	int n2;
+	int i, mul = 1;
 
-	n1 = 0;
-	n2 = 0;
-	if (argc == 3)
+	if (argc > 1 && (argc - 1) == 2)
 	{
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[2]);
-	printf("%d\n", n1 * n2);
+		for (i = 1; i < argc; i++)
+		{
+			mul *= atoi(argv[i]);
+		}
+		printf("%d\n", mul);
 	}
 	else
 	{
-	printf("Zero error\n");
-	return (1);
+		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
